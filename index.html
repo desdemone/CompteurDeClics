@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Compteur de clic perso</title>
+</head>
+
+<body>
+
+  <a id="link" href="#openModal">Infos</a>
+  <div id="openModal" class="modalDialog">
+    <div>
+      <a href="#close" title="Close" class="close">X</a>
+      <p> Vous pouvez également presser les touches "p" pour incrémenter et "m" pour décrementer. </p>
+    </div>
+    <a href="#close" title="Close" class="close">x</a>
+  </div>
+  <!--Notification du haut-->
+  <div class=" notification" id="notification">
+    <p id="notification-texte"></p>
+  </div>
+  <!--Titre limites haute -->
+  <h2 class="titre">Limite haute</h2>
+  <input type="number" name="limite-haute" id="limite-haute" class="limite" value="3">
+
+  <!-- Compteur principal avec les contrôles d'incrémentation et de décrémentation -->
+  <div class="conteneur-compteur">
+    <div>
+
+
+      <button class="bouton-inc-dec" id="bouton-moins">-</button>
+      <input type="number" name="valeur-dec" id="valeur-dec" class="valeur-inc-dec" value="1" min="0">
+    </div>
+    <p class="compteur" id="compteur">0</p>
+    <div>
+
+      <button class="bouton-inc-dec" id="bouton-plus">+</button>
+      <input type="number" name="valeur-inc" id="valeur-inc" class="valeur-inc-dec" value="1" min="0">
+    </div>
+  </div>
+
+
+  <!-- Contrôle de la limite basse du compteur -->
+  <h2 class="titre">Limite basse</h2>
+  <input type="number" name="limite-basse" id="limite-basse" class="limite" value="-3">
+  <!-- Bouton de remise à zéro du compteur -->
+  <button class="bouton-reset" id="bouton-reset">Reset</button>
+  <script src="script.js">
+
+  </script>
+</body>
+
+</html>
