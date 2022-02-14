@@ -1,1 +1,2 @@
 # CompteurDeClics
+Exercice en javascript !
